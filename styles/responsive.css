@@ -1,0 +1,349 @@
+/* MODELO DE IA DE VSCODE CON ALGUNAS EDICIONES MÍAS */
+
+/*@media screen and (max-width: 850px) {
+    .container {
+        padding: 1rem 1.25rem;
+    }
+
+    .nav__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .nav__link {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+        margin-left: 0;
+    }
+
+    .nav__links {
+        font-size: 1rem;
+    }
+
+    .nav__menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .hero__title {
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+    }
+
+    .hero__paragraph {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    main > section:nth-child(1) {
+        margin: 0 1rem;
+        padding: 3rem 0;
+        min-height: auto;
+    }
+
+    .us__container,
+    .features__grid,
+    .norm__card {
+        flex-direction: column;
+    }
+
+    .us__container {
+        gap: 1.5rem;
+    }
+
+    .us__image {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .us__image img {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+
+    .us__info {
+        margin: 1.5rem;
+        margin-top: 0;
+    }
+
+    .features__grid,
+    .section__us {
+        flex-direction: column;
+    }
+
+    .features__grid,
+    .norm__card,
+    .feature__card {
+        min-width: 0;
+    }
+
+    .indice h2 {
+        font-size: 2rem;
+    }
+
+    .indice a {
+        font-size: 1.1rem;
+    }
+
+    .doctrine__info {
+        padding: 0 1rem;
+    }
+
+    .doctrine__nav {
+        padding: 1rem;
+    }
+
+    .seccion__titulo {
+        font-size: 1.6rem;
+    }
+
+    .subseccion-titulo {
+        font-size: 1.4rem;
+    }
+
+    .subseccion,
+    .subseccion__points,
+    .sub-subseccion__points,
+    .doctrine__especific {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    footer p {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .features__grid,
+    .section__norms .features__grid,
+    .us__container {
+        gap: 1.5rem;
+    }
+}*/
+
+/* =======================================================
+    MEDIA QUERIES - RESPONSIVE DESIGN
+   ======================================================= */
+
+/* 1. Pantallas Medianas (Tablets en horizontal y Laptops pequeñas) */
+@media screen and (max-width: 1024px) {
+    .section__info {
+        padding: 0 4rem 3rem 4rem;
+    }
+
+    .doctrine__info {
+        padding: 0 3rem;
+    }
+
+    .us__container {
+        gap: 2rem;
+    }
+}
+
+/* 2. Pantallas Pequeñas (Tablets en vertical y Móviles grandes) */
+@media screen and (max-width: 768px) {
+    /* --- Navegación (Menú Hamburguesa) --- */
+    .nav__menu {
+        display: block; /* Muestra el icono de menú */
+    }
+
+    .nav__link {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Oculta el menú fuera de la pantalla */
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: var(--card-bg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        z-index: 100;
+        transition: right 0.4s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Clase que se añadirá con JS para mostrar el menú */
+    .nav__link--show {
+        right: 0;
+    }
+
+    .nav__close {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .container {
+        padding: 1rem 1.5rem;
+    }
+
+    /*.nav__title {
+        
+    }*/
+
+    /* --- Tipografía y Hero Section --- */
+    .hero__title {
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+    }
+
+    .hero__paragraph {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+    }
+
+    main > section:nth-child(1) {
+        margin: 0;
+        padding: 6rem 1.5rem 3rem 1.5rem;
+        height: auto;
+        min-height: 80vh;
+    }
+
+    /* --- Sobre Nosotros --- */
+    .us__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .us__image {
+        padding-bottom: 0;
+    }
+
+    .us__image img {
+        margin-left: 0;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .us__info h2 {
+        font-size: 2.2rem;
+    }
+
+    /* --- Grids (Doctrinas y Normas) --- */
+    .features__grid {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .feature__card, .norm__card {
+        margin-bottom: 1rem;
+    }
+
+    /* --- Páginas de Doctrinas y Normas --- */
+    .doctrine__nav {
+        padding: 1.5rem 1rem;
+    }
+
+    .indice h2 {
+        font-size: 2rem;
+    }
+
+    .indice a, 
+    .subseccion p, 
+    .doctrine__especific, 
+    .subseccion__points,
+    .seccion__parrafo {
+        font-size: 1.15rem;
+    }
+
+    .doctrine__info {
+        padding: 0 1.5rem;
+    }
+
+    .seccion__titulo {
+        font-size: 1.6rem;
+    }
+
+    .subseccion-titulo {
+        font-size: 1.4rem;
+    }
+
+    /* Reducir márgenes izquierdos en móviles */
+    .subseccion, 
+    .doctrine__especific, 
+    .subseccion__points {
+        margin-left: 1rem;
+    }
+    
+    .sub-subseccion__points {
+        margin-left: 1.5rem;
+    }
+
+    .sub-sub-subseccion__points {
+        margin-left: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Le damos un ancla al contenedor padre para que el botón no se salga */
+    .hero {
+        position: relative;
+    }
+
+    /* Posicionamos el botón exactamente al otro lado del logo */
+    .nav__menu {
+        display: block; /* Muestra el botón en móviles */
+        position: absolute;
+        top: 1.5rem; /* Ajusta la altura para que quede alineado con el logo */
+        right: 1.5rem; /* Lo pega al lado derecho respetando los márgenes */
+        cursor: pointer;
+    }
+
+    .nav__menu--icon {
+        width: 30px; /* Tamaño original de tu icono */
+        display: block;
+    }
+}
+
+/* 3. Pantallas Extra Pequeñas (Móviles pequeños) */
+@media screen and (max-width: 480px) {
+    .hero__title {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    .nav__title {
+        font-size: 1.2rem;
+    }
+
+    .features h2, .section__norms h2 {
+        font-size: 2.2rem;
+    }
+
+    .indice {
+        padding: 1rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+/* Ajuste sutil al botón de ir arriba para pantallas móviles */
+@media screen and (max-width: 768px) {
+    .scroll-top {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 45px;
+        height: 45px;
+    }
+}

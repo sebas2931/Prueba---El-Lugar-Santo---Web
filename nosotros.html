@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - El Lugar Santo</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="icon" href="imagenes/logo.svg">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h1 class="nav__title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flame"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 10.941c2.333 -3.308 .167 -7.823 -1 -8.941c0 3.395 -2.235 5.299 -3.667 6.706c-1.43 1.408 -2.333 3.294 -2.333 5.588c0 3.704 3.134 6.706 7 6.706c3.866 0 7 -3.002 7 -6.706c0 -1.712 -1.232 -4.403 -2.333 -5.588c-2.084 3.353 -3.257 3.353 -4.667 2.235" /></svg>
+                    El Lugar Santo
+                </h1>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items"><a href="./index.html" class="nav__links">Inicio</a></li>
+                <li class="nav__items"><a href="./nosotros.html" class="nav__links">Nosotros</a></li>
+                <li class="nav__items"><a href="./doctrinas.html" class="nav__links">Doctrinas</a></li>
+                <li class="nav__items"><a href="./normas.html" class="nav__links">Normas</a></li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-square-x nav__close"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" /><path d="M9 9l6 6m0 -6l-6 6" /></svg>
+                <!-- <img src="imagenes/close.svg" class="nav__close" alt="Icono para cerrar el menú en dispositivos móviles"> -->
+            </ul>
+        </nav>
+        <div class="nav__menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2 nav__menu--icon"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+            <!-- <img src="" class="nav__menu--icon" alt="Icono de menú para dispositivos móviles"> -->
+        </div>
+    </header>
+    <main>
+        <section>
+            <img src="imagenes/fondo-nosotros.jpg" alt="Imagen de fondo con texturas negras, rojas y rosadas.">
+            <h1 class="hero__title">Conoce a la Iglesia "El Lugar Santo"</h1>
+            <p class="hero__paragraph">Somos una comunidad de creyentes comprometidos con la restauración espiritual y el crecimiento en la fe. Únete a nosotros para experimentar el amor de Dios y vivir una vida llena de propósito.</p>
+        </section>
+        <button class="scroll-top" aria-label="Volver arriba">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-arrow-up">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 5l0 14" />
+            <path d="M18 11l-6 -6" />
+            <path d="M6 11l6 -6" />
+            </svg>
+        </button>
+        <section class="section__info">
+            <h2>Constitución de las Iglesias "El Lugar Santo"</h2>
+            <p>Con el fin de que cada miembro de esta Iglesia, así como nuestros hermanos que militan en otras misiones cristianas puedan conocer perfectamente nuestra doctrina. Declaramos que Nos constituimos como iglesia con el fin de llevar a cabo las doctrinas fundamentales de la Biblia.  Reunidos en asamblea libre y soberana se resolvió adoptar esta constitución y reglamento con el propósito de establecer y mantener un lugar para la adoración a Dios nuestro Padre Celestial. Además, asumir nuestra parte en la responsabilidad de la propagación del evangelio de nuestro Señor Jesucristo en nuestra comunidad y otros lugares que nos dirija Dios a ir. Nuestra Iglesia fue Iniciada el 20 de Enero de 2023, Hacemos constar que no somos un grupo salido de ninguna otra misión. Por cuanto declaramos nuestros principios y en lo que Creemos:</p>
+        </section>
+    </main>
+    <footer>
+        <h3>Visítanos</h3>
+        <p>📍 Dirección: Carretera Villa de Cura - San Francisco, Sector las Guacharacas, Fundo El Guacharo, Municipio Ezequiel Zamora, Aragua, Venezuela.</p>
+        <p>⏰ Horarios: Domingos 10:00 AM | Miércoles 5:00 PM</p>
+        <p>✉️ Correo: contacto@iglesiacristiana.com</p>
+        <small>
+            &copy; 2025 El Lugar Santo. Todos los derechos reservados.
+        </small>
+    </footer>
+
+    <script>
+    const navMenu = document.querySelector('.nav__menu');
+    const navLink = document.querySelector('.nav__link');
+    const navClose = document.querySelector('.nav__close');
+
+    /* Mostrar menú */
+    navMenu.addEventListener('click', () => {
+        navLink.classList.add('nav__link--show');
+    });
+
+    /* Ocultar menú */
+    navClose.addEventListener('click', () => {
+        navLink.classList.remove('nav__link--show');
+    });
+
+    /* Ocultar menú al hacer click en un enlace (ideal para móviles) */
+    document.querySelectorAll('.nav__links').forEach(link => {
+        link.addEventListener('click', () => {
+            navLink.classList.remove('nav__link--show');
+        });
+    });
+    </script>
+    <script>
+    const scrollTopBtn = document.querySelector('.scroll-top');
+
+    /* Mostrar u ocultar el botón según el scroll */
+    window.addEventListener('scroll', () => {
+        // Si el usuario ha bajado más de 300 píxeles, se muestra el botón
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.add('scroll-top--show');
+        } else {
+            scrollTopBtn.classList.remove('scroll-top--show');
+        }
+    });
+
+    /* Volver arriba al hacer clic */
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' /* Hace que el deslizamiento sea fluido */
+        });
+    });
+    </script>
+</body>
+</html>
