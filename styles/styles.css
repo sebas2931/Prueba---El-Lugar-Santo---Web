@@ -131,6 +131,37 @@ body {
     line-height: 2rem;
 }
 
+.botones-ubicacion-container {
+    display: flex;
+    gap: 15px; /* Espacio entre los dos botones */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+/* Estilo general para los enlaces/botones */
+.btn-mapa {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto al pasar el mouse por encima (Hover) */
+.btn-mapa:hover {
+    transform: scale(1.05); /* Se agranda un poco */
+    filter: brightness(1.1); /* Brilla sutilmente */
+}
+
+/* Ajuste de las imágenes dentro de los botones */
+.btn-mapa img {
+    height: 60px; /* Ajusta la altura según lo necesites */
+    width: auto;
+    display: block;
+    border-radius: 50px; /* Mantiene los bordes redondeados si la imagen no los tiene */
+}
+
 /*Main de la página web*/
 main > section:nth-child(1) {
     margin: 0 3rem 0 3rem;
