@@ -510,6 +510,57 @@ span {
     margin-left: 3rem;
 }
 
+.constitution {
+    margin-bottom: 1rem;
+}
+
+.section__vision {
+    text-align: center;
+    padding: 3rem 10rem 3rem 10rem;
+}
+
+.section__vision h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section__vision p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.section__mission {
+    background-color: #1e293b;
+    text-align: center;
+    padding: 3rem 10rem 3rem 10rem;
+}
+
+.section__mission h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section__mission p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.section__purpose {
+    background-color: #8C292099;
+    text-align: center;
+    padding: 3rem 10rem 3rem 10rem;
+}
+
+.section__purpose h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section__purpose p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
 /* =======================================================
     BOTÓN IR ARRIBA
    ======================================================= */

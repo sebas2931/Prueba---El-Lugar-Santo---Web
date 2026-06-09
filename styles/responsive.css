@@ -143,8 +143,20 @@
         padding: 0 4rem 3rem 4rem;
     }
 
+    .section__vision,
+    .section__mission,
+    .section__purpose {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
     .doctrine__info {
         padding: 0 3rem;
+    }
+
+    .doctrine__nav {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .us__container {
@@ -210,6 +222,20 @@
         padding: 0 1rem;
     }
 
+    .hero__title,
+    .nav__title,
+    .indice h2,
+    .seccion__titulo,
+    .subseccion-titulo,
+    .section__info h2,
+    .section__vision h2,
+    .section__mission h2,
+    .section__purpose h2,
+    .features h2,
+    .section__norms h2 {
+        overflow-wrap: anywhere;
+    }
+
     main > section:nth-child(1) {
         margin: 0;
         padding: 6rem 1.5rem 3rem 1.5rem;
@@ -269,6 +295,10 @@
         padding: 0 1.5rem;
     }
 
+    .indice ul {
+        padding-left: 1rem;
+    }
+
     .seccion__titulo {
         font-size: 1.6rem;
     }
@@ -282,6 +312,13 @@
     .doctrine__especific, 
     .subseccion__points {
         margin-left: 1rem;
+    }
+
+    .doctrine__especific,
+    .subseccion__points,
+    .sub-subseccion__points,
+    .sub-sub-subseccion__points {
+        padding-left: 0;
     }
     
     .sub-subseccion__points {
@@ -314,6 +351,76 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    /* Ajustes específicos para la página Nosotros */
+    .section__info,
+    .section__vision,
+    .section__mission,
+    .section__purpose,
+    .features {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .section__info {
+        padding-top: 0;
+    }
+
+    .section__info h2,
+    .section__vision h2,
+    .section__mission h2,
+    .section__purpose h2,
+    .features h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .section__info p,
+    .section__vision p,
+    .section__mission p,
+    .section__purpose p,
+    .feature__card p,
+    footer p {
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+
+    .features {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .features__grid {
+        width: 100%;
+    }
+
+    .feature__card {
+        width: 100%;
+        min-width: 0;
+        padding: 2rem 1.5rem;
+    }
+
+    .section__vision,
+    .section__mission,
+    .section__purpose {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .section__mission,
+    .section__purpose {
+        text-align: center;
+    }
+
+    footer {
+        padding: 1.25rem;
+    }
+
+    footer h3 {
+        font-size: 1.25rem;
+    }
+}
+
 /* 3. Pantallas Extra Pequeñas (Móviles pequeños) */
 @media screen and (max-width: 480px) {
     .hero__title {
@@ -325,12 +432,47 @@
         font-size: 1.2rem;
     }
 
+    .nav__title,
+    .hero__title,
+    .indice h2,
+    .seccion__titulo,
+    .subseccion-titulo {
+        word-break: break-word;
+    }
+
     .features h2, .section__norms h2 {
         font-size: 2.2rem;
     }
 
+    .section__info h2,
+    .section__vision h2,
+    .section__mission h2,
+    .section__purpose h2 {
+        font-size: 1.7rem;
+    }
+
+    .section__info p,
+    .section__vision p,
+    .section__mission p,
+    .section__purpose p,
+    .hero__paragraph {
+        font-size: 1rem;
+    }
+
+    .feature__card {
+        padding: 1.5rem 1.2rem;
+    }
+
     .indice {
         padding: 1rem;
+    }
+
+    .indice ul,
+    .doctrine__especific,
+    .subseccion__points,
+    .sub-subseccion__points,
+    .sub-sub-subseccion__points {
+        padding-left: 0.5rem;
     }
 
     footer p {
